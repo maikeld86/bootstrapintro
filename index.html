@@ -11,11 +11,34 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css" >
 
-    <title>Ristorante Con Fusion test </title>
+    <title>Ristorante Con Fusion  </title>
 </head>
 
     <body>
-
+        <!--basic navbar with bootstrap classes-->
+        <!--
+            navbar-inver  gives the navbar a dark color ,
+            navbar-toggleable means that the smaller screensizes get a toggleble navbar
+            bg-primary gives de navbar the primary color temp.
+            fixed top means the navbar is fixed to the topsite of the website
+        -->
+        <nav  class="navbar navbar-inverse navbar-toggleable-sm  fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Ristorante Con Fusion  </a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--einde basic navbar-->
         <header class="jumbotron">
             <div class="container">
                 <div class="row row-header">
@@ -70,7 +93,7 @@
                         <h5>Links</h5>
                         <ul class="list-unstyled">
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="./aboutus.html">About</a></li>
                             <li><a href="#">Menu</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
