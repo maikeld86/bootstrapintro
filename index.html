@@ -132,13 +132,47 @@
                     <div class="card">
                         <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                         <div class="card-block">
-                            <div class="row">
-                                <dt>Number of Guests</dt>
-                            </div>
-                            <div class="row">
-                                <dt>Date and Time</dt>
-
-                            </div>
+                            <form action="">
+                                <div class="row form-group">
+                                    <div class="col-sm-2">
+                                        <label>Number of Guests</label>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="input-group">
+                                            <input type="radio" class="form-control mr-0" value="1" name="guest"/>1
+                                            <input type="radio" class="form-control" value="2" name="guest"/>2
+                                            <input type="radio" class="form-control" value="2" name="guest"/>3
+                                            <input type="radio" class="form-control" value="2" name="guest"/>4
+                                            <input type="radio" class="form-control" value="2" name="guest"/>5
+                                            <input type="radio" class="form-control" value="2" name="guest"/>6
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2"><label>Date and Time</label></div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <div class="fa fa-calendar fa-lg"></div>
+                                            </div>
+                                            <input type="text" class="form-control" name="date" placeholder="Date">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <div class="fa fa-clock-o fa-lg"></div>
+                                            </div>
+                                            <input type="text" name="time" placeholder="TIme" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="offset-sm-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary">Reserve</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
