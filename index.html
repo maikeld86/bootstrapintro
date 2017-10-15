@@ -34,15 +34,62 @@
                 </button>
                 <a class="navbar-brand" href="#"><img src="./img/logo.png" height="30px" width="41px" /> </a>
                 <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About </a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
+                    <span class="navbar-text">
+                        <a class="text-white" data-toggle="modal" data-target="" href="#loginModal">
+                            <span class="fa fa-sign-in"></span>Login
+                        </a>
+                    </span>
                 </div>
             </div>
         </nav>
+
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="model-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title ">Login</h4>
+                        <button type="button" class="close"
+                        data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="exampleInputEmail3" class="sr-only"> Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1"
+                                       id="exampleInputEmail3" name="exampleInputEmail3"
+                                       placeholder="Enter email"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword3" class="sr-only"> Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                       id="exampleInputPassword3" name="exampleInputPassword3"
+                                       placeholder="Password"
+                                >
+                            </div>
+                            <div class="form-check">
+                                <label for="check" class="form-check-label">
+                                    <input type="checkbox" id="check" name="check" class="form-check-input">
+                                    Remember me
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default btn-sm" type="button" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary btn-sm" type="submit">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--einde basic navbar-->
         <header class="jumbotron">
             <div class="container">
@@ -55,7 +102,11 @@
                         <img src="./img/logo.png" class="img-fluid">
                     </div>
                     <div class="col12 col-sm align-self-center">
-                        <button type="button" class="btn btn-warning">Reserve a Table</button>
+                        <button type="button" class="btn btn-warning btn-sm nav-link " href="#reserveform"
+                        data-toggle="tooltip"
+                        data-html="true"
+                        title="Or Call us At<br><strong>+852 12345678 </strong>"
+                        data-placement="bottom">Reserve a Table</button>
                     </div>
                 </div>
 
@@ -148,7 +199,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row form-group">
+                                <div class="row form-group " >
                                     <div class="col-sm-2"><label>Date and Time</label></div>
                                     <div class="col-sm-4">
                                         <div class="input-group">
@@ -224,6 +275,13 @@
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!--custom scripts-->
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle = "tooltip"]').tooltip();
+            })
+        </script>
     </body>
 
 </html>
