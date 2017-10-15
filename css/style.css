@@ -1,3 +1,6 @@
+.form-control{
+color:black;
+}
 .row-header{
     margin: 0 auto;
     padding: 0 auto;
@@ -57,6 +60,11 @@ body{
 
 .model-content{
     background-color:#fff ;
+    color: #000;
+}
+
+.modal-title,.form-group {
+    color:#000;
 }
 
 /*Carousel*/
